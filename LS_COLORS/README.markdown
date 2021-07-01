@@ -1,3 +1,5 @@
+Copied directly from repo: https://github.com/trapd00r/LS_COLORS
+
 ### Table of contents
 * [LS_COLORS](#ls_colors)
 * [What does it look like?](#what-does-it-look-like)
