@@ -1,1 +1,1 @@
-. "/home/mpossing/.local/share/lscolors.sh"
+. "$HOME/.local/share/lscolors.sh"
