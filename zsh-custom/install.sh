@@ -1,8 +1,9 @@
 #!/bin/bash
 
-CUSTOM=$ZSH/custom
-echo "Clearing zsh custom .zsh files from $CUSTOM"
-rm $CUSTOM/*.zsh
+custom=$HOME/.oh-my-zsh/custom
+
+echo "Clearing zsh custom .zsh files from $custom"
+rm $custom/*.zsh
 echo "Copying..."
-cp ./*.zsh $CUSTOM
+cp ./*.zsh $custom
 echo Done!
