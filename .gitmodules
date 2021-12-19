@@ -1,3 +1,6 @@
 [submodule "zsh-custom/themes/powerlevel10k"]
 	path = zsh-custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "ls_colors"]
+	path = ls_colors
+	url = https://github.com/trapd00r/LS_COLORS.git
