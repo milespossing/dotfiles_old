@@ -2,27 +2,28 @@
 # zsh											#
 ###########################
 
-ln linux/.zshrc $HOME/.zshrc
-cd zsh-custom
-./install.sh
-cd ..
+echo "zsh"
+cp -f .local.start.zsh $HOME/.local.zsh
+echo "ZSH_CUSTOM=$(pwd)/zsh-custom" >> $HOME/.local.zsh
+ln -f .zshrc $HOME/.zshrc
 
 ###########################
 # vim											#
 ###########################
 
+echo "vim"
 mkdir -p $HOME/.config/nvim
-ln .vimrc $HOME/.vimrc
+ln -f .vimrc $HOME/.vimrc
 echo "source $HOME/.vimrc" >> $HOME/.config/nvim/init.vim
-
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PlugInstall +qall
+ln -Fs vundle $HOME/.vim/bundle/Vundle.vim
+nvim +PlugInstall +qall
 
 
 ###########################
 # tmux										#
 ###########################
 
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-ln .tmux.conf $HOME/.tmux.conf
+echo "tmux"
+ln -Fs tpm $HOME/.tmux/plugins/tpm
+ln -f .tmux.conf $HOME/.tmux.conf
 

@@ -4,3 +4,12 @@
 [submodule "ls_colors"]
 	path = ls_colors
 	url = https://github.com/trapd00r/LS_COLORS.git
+[submodule "zsh-custom/plugins/zsh-autocomplete"]
+	path = zsh-custom/plugins/zsh-autocomplete
+	url = https://github.com/marlonrichert/zsh-autocomplete.git
+[submodule "tpm"]
+	path = tpm
+	url = https://github.com/tmux-plugins/tpm.git
+[submodule "vundle"]
+	path = vundle
+	url = https://github.com/VundleVim/Vundle.vim.git
