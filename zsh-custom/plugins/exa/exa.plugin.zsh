@@ -1,3 +1,3 @@
-alias ll="exa -l"
-alias la="exa -la"
+alias ll="exa -l --icons"
+alias la="exa -la --icons"
 alias ls="exa"
