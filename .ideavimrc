@@ -4,6 +4,7 @@ set scrolloff=3
 set ignorecase smartcase
 set showmode
 set history=1000
+set ideajoin 
 
 " easy system clipboard copy/paste
 noremap <space>y "*y
