@@ -1,1 +1,1 @@
-plugins=(git zsh-autocomplete sudo npm nvm tmux cargo)
+plugins=(git zsh-autocomplete sudo npm nvm tmux rust)
