@@ -1,1 +1,1 @@
-. "/home/miles/.local/share/lscolors.sh"
+. "$HOME/.local/share/lscolors.sh"
