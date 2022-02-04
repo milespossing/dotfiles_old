@@ -28,3 +28,6 @@
 [submodule "zsh-custom/plugins/az-keyvault"]
 	path = zsh-custom/plugins/az-keyvault
 	url = https://github.com/milespossing/Azure-Keyvault-Zsh.git
+[submodule "zsh-custom/plugins/zcolors"]
+	path = zsh-custom/plugins/zcolors
+	url = https://github.com/marlonrichert/zcolors.git

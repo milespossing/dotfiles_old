@@ -49,6 +49,13 @@ endif
 nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
 
+if system('uname -r') =~ "Microsoft"
+    augroup Yank
+        autocmd!
+        autocmd TextYankPost * :call system('/mnt/c/windows/system32/clip.exe ',@")
+        augroup END
+endif
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERD Tree						                                      "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

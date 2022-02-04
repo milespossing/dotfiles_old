@@ -1,5 +1,5 @@
-alias ll="exa -l --icons"
-alias la="exa -la --icons"
+alias ll="exa -lh --icons --time-style=long-iso"
+alias la="exa -lah --icons --time-style=long-iso"
 alias ls="exa"
 alias cd=z
 alias cat=bat
