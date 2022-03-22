@@ -15,12 +15,14 @@ Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 " Having issues with completions
-" Plugin 'valloric/youcompleteme'
+Plugin 'valloric/youcompleteme'
 Plugin 'w0rp/ale'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'isruslan/vim-es6'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -67,3 +69,7 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" fzf                                                       "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" let g:fzf_default_command='fzf --preview "bat {}"'
