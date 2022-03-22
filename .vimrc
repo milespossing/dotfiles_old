@@ -15,7 +15,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 " Having issues with completions
-" Plugin 'valloric/youcompleteme'
+Plugin 'valloric/youcompleteme'
 Plugin 'w0rp/ale'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
@@ -74,6 +74,11 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 " If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
 autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" fzf                                                       "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:fzf_default_command='fzf --preview "bat {}"'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ALE     						                                      "
