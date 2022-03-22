@@ -24,7 +24,6 @@ Plugin 'isruslan/vim-es6'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -50,6 +49,13 @@ endif
 nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
 
+if system('uname -r') =~ "Microsoft"
+    augroup Yank
+        autocmd!
+        autocmd TextYankPost * :call system('/mnt/c/windows/system32/clip.exe ',@")
+        augroup END
+endif
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERD Tree						                                      "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -72,4 +78,15 @@ autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " fzf                                                       "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:fzf_default_command='fzf --preview "bat {}"'
+let g:fzf_default_command='fzf --preview "bat {}"'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ALE     						                                      "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:ale_fixers = {
+\   'javascript': [
+\       'eslint',
+\       'prettier',
+\   ],
+\}

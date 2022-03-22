@@ -19,3 +19,15 @@
 [submodule "zsh-custom/plugins/zsh-autosuggestions"]
 	path = zsh-custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "zsh-custom/plugins/Azure-Keyvault-Zsh"]
+	path = zsh-custom/plugins/Azure-Keyvault-Zsh
+	url = https://github.com/milespossing/Azure-Keyvault-Zsh.git
+[submodule "zsh-custom/plugins/az-custom"]
+	path = zsh-custom/plugins/az-custom
+	url = https://github.com/milespossing/Azure-Keyvault-Zsh.git
+[submodule "zsh-custom/plugins/az-keyvault"]
+	path = zsh-custom/plugins/az-keyvault
+	url = https://github.com/milespossing/Azure-Keyvault-Zsh.git
+[submodule "zsh-custom/plugins/zcolors"]
+	path = zsh-custom/plugins/zcolors
+	url = https://github.com/marlonrichert/zcolors.git
