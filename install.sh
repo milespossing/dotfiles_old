@@ -2,10 +2,10 @@
 # zsh                     #
 ###########################
 
-echo "zsh"
-cp -f .local.start.zsh $HOME/.local.zsh
-echo "ZSH_CUSTOM=$(pwd)/zsh-custom" >> $HOME/.local.zsh
-ln -f .zshrc $HOME/.zshrc
+echo "zsh -- omz"
+cp -f zsh/omz.local.start.zsh $HOME/.local.zsh
+echo "ZSH_CUSTOM=$(pwd)/zsh/zsh-custom" >> $HOME/.local.zsh
+ln -f zsh/omz.zshrc $HOME/.zshrc
 
 ###########################
 # vim                     #
