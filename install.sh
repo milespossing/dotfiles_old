@@ -6,6 +6,8 @@ echo "zsh"
 cp -f .local.start.zsh $HOME/.local.zsh
 echo "ZSH_CUSTOM=$(pwd)/zsh-custom" >> $HOME/.local.zsh
 ln -f .zshrc $HOME/.zshrc
+mkdir $HOME/.config
+ln -f starship.toml $HOME/.config/starship.toml
 
 ###########################
 # vim                     #
