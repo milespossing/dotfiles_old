@@ -3,7 +3,7 @@ zsh-reload(){
 }
 
 __load-custom-plugin(){
-  source "$ZSH_CUSTOM/$1.zsh"
+  source "$ZSH_CUSTOM/$1.plugin.zsh"
 }
 
 __load-all-plugins(){
