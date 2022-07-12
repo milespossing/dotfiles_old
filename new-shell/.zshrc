@@ -1,3 +1,4 @@
+export EDITOR=vim
 source "$HOME/.local.zsh"
 source "$ZSH_CUSTOM/zsh-tools.zsh"
 
