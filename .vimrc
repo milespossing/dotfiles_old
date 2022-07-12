@@ -15,7 +15,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 " Having issues with completions
-Plugin 'valloric/youcompleteme'
+Plugin 'tabnine/youcompleteme'
 Plugin 'w0rp/ale'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
@@ -23,6 +23,9 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'isruslan/vim-es6'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
