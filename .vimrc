@@ -24,6 +24,7 @@ Plugin 'isruslan/vim-es6'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
 

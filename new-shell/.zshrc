@@ -1,4 +1,5 @@
-export EDITOR=vim
+export EDITOR=nvim
+export VISUAL=vi
 source "$HOME/.local.zsh"
 source "$ZSH_CUSTOM/zsh-tools.zsh"
 
