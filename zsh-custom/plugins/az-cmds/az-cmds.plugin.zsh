@@ -1,0 +1,1 @@
+alias ad-user="az ad signed-in-user show | jq -r \".objectId\""
