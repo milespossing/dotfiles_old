@@ -31,3 +31,9 @@
 [submodule "zsh-custom/plugins/zcolors"]
 	path = zsh-custom/plugins/zcolors
 	url = https://github.com/marlonrichert/zcolors.git
+[submodule ".tmux"]
+	path = tmux
+	url = https://github.com/milespossing/.tmux.git
+[submodule "tmux"]
+	path = tmux
+	url = https://github.com/gpakosz/.tmux.git

@@ -16,7 +16,6 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
-" Having issues with completions
 Plugin 'tabnine/youcompleteme'
 Plugin 'w0rp/ale'
 Plugin 'pangloss/vim-javascript'
@@ -29,6 +28,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
+Plugin 'ryanoasis/vim-devicons'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -52,8 +52,8 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General                                                   "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
-nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+nnoremap <silent> <Leader>+ 10<Ctrl-w>>
+nnoremap <silent> <c-l> 10<c-w><
 
 if system('uname -r') =~ "Microsoft"
     augroup Yank

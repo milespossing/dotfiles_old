@@ -1,4 +1,6 @@
 #!/bin/bash
 echo "installing tmux config"
-ln -f oh-my-tmux/.tmux.conf $HOME/.tmux.conf
-cp -f oh-my-tmux/.tmux.conf.local $HOME
+mkdir -p $HOME/.tmux/plugins
+ln -f tmux/.tmux.conf $HOME/.tmux.conf
+ln -f .tmux.conf.local $HOME
+ln -sf tpm $HOME/.tmux/plugins/tpm

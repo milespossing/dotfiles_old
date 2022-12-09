@@ -1,0 +1,16 @@
+In new machines I follow the following steps (in some order, but not really):
+
+# Dotfiles
+
+- install rustup/cargo
+- install brew
+- install python
+- install tmux
+- install vim/nvim
+- dotfiles
+	- always zsh with starship
+	- vimrc and nvim.conf
+
+# Software
+
+IDEs: Jetbrains, vs-code, beyond-compare
