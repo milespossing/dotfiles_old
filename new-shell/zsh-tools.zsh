@@ -2,13 +2,13 @@ zsh-reload(){
   source $HOME/.zshrc
 }
 
-__load-custom-plugin(){
-  source "$ZSH_CUSTOM/$1.plugin.zsh"
+__load-basic-plugin(){
+  source $1
 }
 
 __load-all-plugins(){
   for plugin in $plugins
   do
-    __load-custom-plugin $plugin
+    __load-basic-plugin $plugin
   done
 }
