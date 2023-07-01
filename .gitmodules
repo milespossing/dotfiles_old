@@ -31,3 +31,6 @@
 [submodule "zsh-custom/plugins/zcolors"]
 	path = zsh-custom/plugins/zcolors
 	url = https://github.com/marlonrichert/zcolors.git
+[submodule "new-shell/zsh-vi-mode"]
+	path = new-shell/zsh-vi-mode
+	url = https://github.com/jeffreytse/zsh-vi-mode.git
