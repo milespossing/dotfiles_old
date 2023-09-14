@@ -7,8 +7,13 @@ __load-basic-plugin(){
 }
 
 __load-all-plugins(){
-  for plugin in $plugins
+  for plugin in $min_plugins
   do
     __load-basic-plugin $plugin
   done
+  if [[ -z $MIN_SHELL ]]; then
+    for plugin in $full_plugins; do
+      __load-basic-plugin $plugin
+    done
+  fi
 }
