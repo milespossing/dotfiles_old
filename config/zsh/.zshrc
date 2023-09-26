@@ -1,7 +1,6 @@
 export EDITOR=nvim
 export VISUAL=vi
 source "$HOME/.local.zsh"
-export ZSH_CUSTOM="$DOTFILES_DIR/config/zsh"
 source "$ZSH_CUSTOM/zsh-tools.zsh"
 
 core_plugins=(
@@ -26,7 +25,12 @@ export PATH=$PATH:$HOME/bin
 
 source "$HOME/.cargo/env"
 . "$HOME/.asdf/asdf.sh"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+if [ -z "$MACOS" ]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+else
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

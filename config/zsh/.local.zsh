@@ -1,4 +1,6 @@
 
+export ZSH_CUSTOM="$DOTFILES_DIR/config/zsh"
+
 min_plugins=(
 )
 
