@@ -1,2 +1,0 @@
-(x) Add homebrew to unix specific installers
-(x) Add a 'fast' zshrc to override the regular one
