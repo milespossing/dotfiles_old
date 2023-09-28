@@ -5,7 +5,7 @@ sudo apt upgrade -y
 
 # TODO: Make this a bit more contextual (ie we don't need all these packages necessarily)
 sudo apt install -y pkg-config libssl-dev build-essential curl git \
-	zsh cmake unzip gpg dirmngr gawk libtool
+	zsh cmake unzip gpg dirmngr gawk libtool-bin
 
 # Homebrew
 if test "/home/linuxbrew"; then
