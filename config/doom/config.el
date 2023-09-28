@@ -28,7 +28,6 @@
                                "* %i%? \n %U")))
 
 ;; projectile
-
 (setq projectile-project-search-path '("~/src"))
 
 ;; local

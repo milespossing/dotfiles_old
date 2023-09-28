@@ -49,6 +49,10 @@ fi
 
 gum confirm "Install asdf environments?" && source ./core/asdf.sh
 
+# Fonts
+
+gum confirm "Install FiraMono Font?" && source ./installers/font.sh
+
 # emacs
 
 ## Install
@@ -60,7 +64,7 @@ gum confirm "Install emacs?" &&
 
 gum confirm "Update doom config?" && source installers/doom.sh
 
-gum confirm "Copy Private Doom Config Files?" && echo "Nothing to do (yet)"
+gum confirm "Copy Private Doom Config Files?" && source installers/doom-config.sh
 
 # Starship
 gum confirm "Would you like to install starship?" && source installers/starship.sh
