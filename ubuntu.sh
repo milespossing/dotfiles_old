@@ -5,7 +5,7 @@ sudo apt upgrade -y
 
 # TODO: Make this a bit more contextual (ie we don't need all these packages necessarily)
 sudo apt install -y pkg-config libssl-dev build-essential curl git \
-	zsh cmake unzip gpg dirmngr gawk
+	zsh cmake unzip gpg dirmngr gawk libtool-bin
 
 # Homebrew
 if test "/home/linuxbrew"; then
@@ -49,6 +49,10 @@ fi
 
 gum confirm "Install asdf environments?" && source ./core/asdf.sh
 
+# Fonts
+
+gum confirm "Install FiraMono Font?" && source ./installers/font.sh
+
 # emacs
 
 ## Install
@@ -60,7 +64,7 @@ gum confirm "Install emacs?" &&
 
 gum confirm "Update doom config?" && source installers/doom.sh
 
-gum confirm "Copy Private Doom Config Files?" && echo "Nothing to do (yet)"
+gum confirm "Copy Private Doom Config Files?" && source installers/doom-config.sh
 
 # Starship
 gum confirm "Would you like to install starship?" && source installers/starship.sh
