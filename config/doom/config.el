@@ -16,20 +16,35 @@
 (add-hook 'after-change-major-mode-hook 'see-no-evil)
 
 ;; Org
-(setq org-agenda-files '("~/gtd/inbox.org"
-                         "~/gtd/gtd.org"
-                         "~/gtd/ticklet.org"))
+(setq org-agenda-files '("~/org/inbox.org"
+                         "~/org/gtd.org"
+                         ;; "~/org/ticklet.org"
+                         ))
 
 (setq org-capture-templates '(("t" "Todo [inbox]" entry
-                               (file+headline "~/gtd/inbox.org" "Tasks")
+                               (file+headline "~/org/inbox.org" "Tasks")
                                "* TODO %i%?")
-                              ("T" "Tickler" entry
-                               (file+headline "~/gtd/tickler.org" "Tickler")
-                               "* %i%? \n %U")))
+                              ;; ("T" "Tickler" entry
+                              ;;  (file+headline "~/org/tickler.org" "Tickler")
+                              ;;  "* %i%? \n %U")
+                              ))
+
+(setq org-todo-keywords '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")))
 
 ;; projectile
-
 (setq projectile-project-search-path '("~/src"))
+
+;; zettle
+(defvar zettle-root-directory (expand-file-name "~/org/zettle"))
+
+(defun zettle-new (path)
+  (interactive "sFile name: ")
+  (let* ((timestamp (format-time-string "%Y%m%d%H%M"))
+         (filename (concat (file-name-as-directory zettle-root-directory) timestamp "-" path ".org")))
+    (with-temp-buffer
+      (write-file filename))
+    (find-file filename)))
+
 
 ;; local
 (load! "local")
