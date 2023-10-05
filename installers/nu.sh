@@ -1,6 +1,11 @@
-cargo install nu coreutils
+if [[ $OSTYPE = "darwin"* ]]; then
+	# is mac
+	nu_dir="$HOME/Library/Application Support/nushell"
+elif [[ "$OSTYPE" == "linux-gpu" ]]; then
+	# is linux
+	"nu_dir=$HOME/.config/nushell"
+fi
 
-nu_dir=$HOME/.config/nushell
 mkdir -p $nu_dir
 
 ln -f config/nushell/config.nu $nu_dir/config.nu

@@ -92,4 +92,6 @@ def la [] {
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
 
+zoxide init nushell --hook prompt | save -f ~/.zoxide.nu
+
 source ~/.local.nu
